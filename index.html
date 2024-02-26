@@ -5,12 +5,18 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>P-Ticket</title>
+    <link rel="stylesheet" href="styles/style.css">
     <link href="https://cdn.jsdelivr.net/npm/daisyui@4.7.2/dist/full.min.css" rel="stylesheet" type="text/css" />
     <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://kit.fontawesome.com/2449b09830.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet">
 </head>
 
-<body>
-    <header>
+<body class="font-poppins">
+    <header class="container lg:mx-auto lg:w-[1170px]">
         <section>
             <div class="navbar bg-base-100">
                 <div class="navbar-start">
@@ -22,16 +28,15 @@
                                     d="M4 6h16M4 12h8m-8 6h16" />
                             </svg>
                         </div>
-                        <ul tabindex="0"
+                        <!-- <ul tabindex="0"
                             class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
-                        </ul>
+                        </ul> -->
                     </div>
-                    <a class="btn btn-ghost text-xl">P-Ticket</a>
+                    <a class="btn btn-ghost text-4xl t">P-Ticket</a>
                 </div>
                 <div class="navbar-center hidden lg:flex">
                     <ul class="menu menu-horizontal px-1">
                         <li>
-
                             <ul class="p-2 flex">
                                 <li><a>Home</a></li>
                                 <li><a>About</a></li>
@@ -42,13 +47,47 @@
                     </ul>
                 </div>
                 <div class="navbar-end">
-                    <a class="btn">Button</a>
+                    <a class="btn bg-green-200 text-green-600 text-bold">BUS <img src="images/bus-icon.png" alt=""></a>
                 </div>
+            </div>
+        </section>
+        <section class="banner w-[1170px] h-[550px]">
+
+            <div class="text-center pt-20">
+                <h1 class="text-5xl text-white font-bold ">End-to-End Travel with <br>
+                    <span class="text-green-600">P Paribahan</span>
+                </h1>
+                <p class="text-lg text-white w-[691px] h-[60px] text-center mx-auto pt-7">Yes, you can run unit
+                    tests
+                    and
+                    view the
+                    results
+                    directly
+                    within
+                    the app.
+                    The
+                    integrated testing
+                    features allow for a streamlined .</p>
+                <button class="btn bg-green-500 border-none font-bold mt-12">Buy Ticket</button>
             </div>
         </section>
     </header>
     <main>
+        <section class="w-[1170px] h-[550px]  mt-32 mx-auto">
+            <h1 class="text-4xl text-center font-semibold">Best offers for you</h1>
+            <div class="flex mt-12 gap-10">
+                <div class="w-[573px] h-[220px] bg-[#FFBF0F] rounded-xl text-center pt-7 ">
+                    <div class="pr-5">
+                        <h2 class="text-5xl font-extrabold">15% OFF</h2>
+                        <p class="text-2xl ">on your next purchase <br>
+                            use by January 2024</p>
+                    </div>
+                </div>
+                <div class="w-[573px] h-[220px] bg-[#F78C9C] rounded-xl">
 
+                </div>
+            </div>
+        </section>
     </main>
     <footer>
 
