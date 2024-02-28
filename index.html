@@ -111,34 +111,257 @@
                 <button class="btn border-green-400  text-green-500 text-lg">See All Offers</button>
             </div>
         </section>
-        <section class="bg-[#F7F8F8] rounded-2xl mx-auto">
-            <div class="text-center pt-20">
-                <h1 class="text-5xl font-bold">P.H Paribahan</h1>
-                <p class="w-[736px] text-center h-[60px] mx-auto mt-6">Yes, you can run unit tests and view the results
-                    directly
-                    within the
-                    app. The
-                    integrated testing
-                    features allow for a streamlined .Yes, you can run unit tests and view the results directly within
-                    the app. The integrated testing features allow for a streamlined .</p>
-
-                <div class="h-[418px] w-[1170px] bg-white mx-auto mt-[50px] rounded-2xl">
-                    <div class="flex gap-[233px]">
-                        <div>
+        <section id="booking"
+            class="w-full border-t border-[#1DD100] rounded-[50px] bg-[#F7F8F8] mt-28 space-y-6 pb-32">
+            <h1 class="font-bold text-[40px] text-center pt-10 pb-4">P.H Paribahan</h1>
+            <p class="text-center">Yes, you can run unit tests and view the results
+                directly
+                within the
+                app. The
+                integrated testing
+                features allow for a streamlined .Yes, you can run unit tests and view the results directly within
+                the app. The integrated testing features allow for a streamlined .
+            </p>
+            <!-- Bus info -->
+            <div class="flex flex-col lg:flex-row bg-white w-11/12 mx-auto rounded-2xl">
+                <div class="w-full lg:w-3/4">
+                    <!-- available seats -->
+                    <div class="flex justify-between p-2 lg:p-10">
+                        <div class="flex gap-4 h-14">
                             <img src="images/bus-logo.png" alt="">
-                            <h2 class="text-4xl font-semibold">Greenline Paribahan</h2>
-                            <p>Coach-009-WEB ! AC_Business</p>
+                            <div>
+                                <h1 class="font-extrabold text-3xl">Greenline Paribahan</h1>
+                                <p class="text-[18px]">Coach-009-WEB ! AC_Business</p>
+                            </div>
                         </div>
-                        <button><img src="images/seat-green.png" alt="">40 Seats left</button>
+                        <div>
+                            <i class="fa-solid fa-magnifying-glass fa-lg text-[#424247]"></i>
+                            <a
+                                class="text-lg lg:text-xl font-semibold rounded-lg bg-[#b5f0ac] border-[#1DD100] text-[#1DD100] px-5 py-2 flex gap-3"><img
+                                    src="images/seat-green.png" alt=""><span id="available-seat">40</span> seats left
+                            </a>
+                        </div>
+                    </div>
+                    <!-- route box -->
+                    <div class="bg-[#F7F8F8] rounded-xl mx-10 mt-12 lg:mt-0">
+                        <div class="flex justify-between p-7">
+                            <h3>Route</h3>
+                            <h3>Dhaka-Sylhet</h3>
+                        </div>
+                        <hr class="border-dashed">
+                        <div class="flex justify-between p-7">
+                            <h3>Departure Time</h3>
+                            <h3>9:00pm</h3>
+                        </div>
+                        <hr class="border-dashed">
+                        <div class=" flex justify-between p-1 gap-1 lg:p-7">
+                            <h3 class="rounded-lg bg-gray-300 p-3">Boarding Point - Laxmipur</h3>
+                            <h3 class="rounded-lg bg-gray-300 p-3">Dropping Point - Bogura</h3>
+                            <h3 class="rounded-lg bg-gray-300 p-3">Est. Time - 11 Hour</h3>
+                        </div>
+                    </div>
+                </div>
+                <div class=" hidden lg:block">
+                    <img src="images/info-devider.png" alt="">
+                </div>
+                <div class="flex flex-col justify-center items-center gap-2">
+                    <img src="images/fare.png" alt="">
+                    <h1 class="font-bold text-3xl raleway">550 Taka</h1>
+                    <p class="text-xl">Per Seat</p>
+                </div>
+            </div>
+            <div class="w-11/12 grid grid-cols-1 lg:grid-cols-2 mx-auto bg-white rounded-2xl">
+                <!-- seat selection -->
+                <div class="p-10 space-y-5">
+                    <h1 class="font-semibold text-2xl">Select Your Seat</h1>
+                    <hr class="border-dashed">
+                    <div class="flex justify-between">
+                        <div class="flex">
+                            <img src="images/seat-gray.png" alt="">
+                            <p>Available</p>
+                        </div>
+                        <div class="flex">
+                            <img src="images/seat-green-filled.png" alt="">
+                            <p class="text-[#1DD100]">Selected</p>
+                        </div>
+                    </div>
+                    <hr class="border-dashed">
+                    <img class="rounded-xl ml-[310px] lg:ml-[530px]" width="40" height="40"
+                        src="https://img.icons8.com/ios/50/steering-wheel.png" alt="steering-wheel" />
+                    <!-- seat rows-cols -->
+                    <div class="flex flex-row">
+                        <div class="flex flex-col gap-10">
+                            <div class="px-4 lg:px-10 py-4 rounded-xl">A</div>
+                            <div class="px-4 lg:px-10 py-4 rounded-xl">B</div>
+                            <div class="px-4 lg:px-10 py-4 rounded-xl">C</div>
+                            <div class="px-4 lg:px-10 py-4 rounded-xl">D</div>
+                            <div class="px-4 lg:px-10 py-4 rounded-xl">E</div>
+                            <div class="px-4 lg:px-10 py-4 rounded-xl">F</div>
+                            <div class="px-4 lg:px-10 py-4 rounded-xl">G</div>
+                            <div class="px-4 lg:px-10 py-4 rounded-xl">H</div>
+                            <div class="px-4 lg:px-10 py-4 rounded-xl">I</div>
+                            <div class="px-4 lg:px-10 py-4 rounded-xl">J</div>
+                        </div>
+                        <div id="seats" class="grid grid-cols-4 text-center gap-10">
+                            <div id="A1" onclick="handleClickEvent('A1')" class="bg-[#F7F8F8] px-10 py-4  rounded-xl">A1
+                            </div>
+                            <div id="A2" onclick="handleClickEvent('A2')" class="bg-[#F7F8F8] px-10 py-4  rounded-xl">A2
+                            </div>
+                            <div id="A3" onclick="handleClickEvent('A3')" class="bg-[#F7F8F8] px-10 py-4  rounded-xl">A3
+                            </div>
+                            <div id="A4" onclick="handleClickEvent('A4')" class="bg-[#F7F8F8] px-10 py-4  rounded-xl">A4
+                            </div>
+                            <div id="B1" onclick="handleClickEvent('B1')" class="bg-[#F7F8F8] px-10 py-4  rounded-xl">B1
+                            </div>
+                            <div id="B2" onclick="handleClickEvent('B2')" class="bg-[#F7F8F8] px-10 py-4  rounded-xl">B2
+                            </div>
+                            <div id="B3" onclick="handleClickEvent('B3')" class="bg-[#F7F8F8] px-10 py-4  rounded-xl">B3
+                            </div>
+                            <div id="B4" onclick="handleClickEvent('B4')" class="bg-[#F7F8F8] px-10 py-4  rounded-xl">B4
+                            </div>
+                            <div id="C1" onclick="handleClickEvent('C1')" class="bg-[#F7F8F8] px-10 py-4  rounded-xl">C1
+                            </div>
+                            <div id="C2" onclick="handleClickEvent('C2')" class="bg-[#F7F8F8] px-10 py-4  rounded-xl">C2
+                            </div>
+                            <div id="C3" onclick="handleClickEvent('C3')" class="bg-[#F7F8F8] px-10 py-4  rounded-xl">C3
+                            </div>
+                            <div id="C4" onclick="handleClickEvent('C4')" class="bg-[#F7F8F8] px-10 py-4  rounded-xl">C4
+                            </div>
+                            <div id="D1" onclick="handleClickEvent('D1')" class="bg-[#F7F8F8] px-10 py-4  rounded-xl">D1
+                            </div>
+                            <div id="D2" onclick="handleClickEvent('D2')" class="bg-[#F7F8F8] px-10 py-4  rounded-xl">D2
+                            </div>
+                            <div id="D3" onclick="handleClickEvent('D3')" class="bg-[#F7F8F8] px-10 py-4  rounded-xl">D3
+                            </div>
+                            <div id="D4" onclick="handleClickEvent('D4')" class="bg-[#F7F8F8] px-10 py-4  rounded-xl">D4
+                            </div>
+                            <div id="E1" onclick="handleClickEvent('E1')" class="bg-[#F7F8F8] px-10 py-4  rounded-xl">E1
+                            </div>
+                            <div id="E2" onclick="handleClickEvent('E2')" class="bg-[#F7F8F8] px-10 py-4  rounded-xl">E2
+                            </div>
+                            <div id="E3" onclick="handleClickEvent('E3')" class="bg-[#F7F8F8] px-10 py-4  rounded-xl">E3
+                            </div>
+                            <div id="E4" onclick="handleClickEvent('E4')" class="bg-[#F7F8F8] px-10 py-4  rounded-xl">E4
+                            </div>
+                            <div id="F1" onclick="handleClickEvent('F1')" class="bg-[#F7F8F8] px-10 py-4  rounded-xl">F1
+                            </div>
+                            <div id="F2" onclick="handleClickEvent('F2')" class="bg-[#F7F8F8] px-10 py-4  rounded-xl">F2
+                            </div>
+                            <div id="F3" onclick="handleClickEvent('F3')" class="bg-[#F7F8F8] px-10 py-4  rounded-xl">F3
+                            </div>
+                            <div id="F4" onclick="handleClickEvent('F4')" class="bg-[#F7F8F8] px-10 py-4  rounded-xl">F4
+                            </div>
+                            <div id="G1" onclick="handleClickEvent('G1')" class="bg-[#F7F8F8] px-10 py-4  rounded-xl">G1
+                            </div>
+                            <div id="G2" onclick="handleClickEvent('G2')" class="bg-[#F7F8F8] px-10 py-4  rounded-xl">G2
+                            </div>
+                            <div id="G3" onclick="handleClickEvent('G3')" class="bg-[#F7F8F8] px-10 py-4  rounded-xl">G3
+                            </div>
+                            <div id="G4" onclick="handleClickEvent('G4')" class="bg-[#F7F8F8] px-10 py-4  rounded-xl">G4
+                            </div>
+                            <div id="H1" onclick="handleClickEvent('H1')" class="bg-[#F7F8F8] px-10 py-4  rounded-xl">H1
+                            </div>
+                            <div id="H2" onclick="handleClickEvent('H2')" class="bg-[#F7F8F8] px-10 py-4  rounded-xl">H2
+                            </div>
+                            <div id="H3" onclick="handleClickEvent('H3')" class="bg-[#F7F8F8] px-10 py-4  rounded-xl">H3
+                            </div>
+                            <div id="H4" onclick="handleClickEvent('H4')" class="bg-[#F7F8F8] px-10 py-4  rounded-xl">H4
+                            </div>
+                            <div id="I1" onclick="handleClickEvent('I1')" class="bg-[#F7F8F8] px-10 py-4  rounded-xl">I1
+                            </div>
+                            <div id="I2" onclick="handleClickEvent('I2')" class="bg-[#F7F8F8] px-10 py-4  rounded-xl">I2
+                            </div>
+                            <div id="I3" onclick="handleClickEvent('I3')" class="bg-[#F7F8F8] px-10 py-4  rounded-xl">I3
+                            </div>
+                            <div id="I4" onclick="handleClickEvent('I4')" class="bg-[#F7F8F8] px-10 py-4  rounded-xl">I4
+                            </div>
+                            <div id="J1" onclick="handleClickEvent('J1')" class="bg-[#F7F8F8] px-10 py-4  rounded-xl">J1
+                            </div>
+                            <div id="J2" onclick="handleClickEvent('J2')" class="bg-[#F7F8F8] px-10 py-4  rounded-xl">J2
+                            </div>
+                            <div id="J3" onclick="handleClickEvent('J3')" class="bg-[#F7F8F8] px-10 py-4  rounded-xl">J3
+                            </div>
+                            <div id="J4" onclick="handleClickEvent('J4')" class="bg-[#F7F8F8] px-10 py-4  rounded-xl">J4
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- form -->
+                <div class="p-10 space-y-5">
+                    <h1 class="font-semibold text-2xl">Select Your Seat</h1>
+                    <hr class="border-dashed">
+                    <!-- ticket receipt -->
+                    <div class="bg-[#F7F8F8] rounded-2xl">
+                        <div>
+                            <table class="table text-center">
+                                <!-- head -->
+                                <thead>
+                                    <tr class="text-black text-[16px]">
+                                        <th>Seat <span id="selected-seat" class="text-[#1DD100]">0</span></th>
+                                        <th>Class</th>
+                                        <th>Price</th>
+                                    </tr>
+                                </thead>
+                                <tbody id="tBody">
+
+                                </tbody>
+                            </table>
+                        </div>
+                        <hr class="text-black">
+                        <!-- total price -->
+                        <div class="flex justify-between px-16 py-4">
+                            <p>Total Price</p>
+                            <p>BDT<span id="total-price">0</span></p>
+                        </div>
+                        <!-- coupon input -->
+                        <div class="flex p-4" id="discount-field">
+                            <input id="coupon" type="text" placeholder="Have any coupon?"
+                                class="input w-11/12 mx-auto" />
+                            <button id="coupon-btn" onclick="discount()"
+                                class="px-4 py-2 bg-[#1DD100] text-white rounded-xl">Apply</button>
+                        </div>
+                        <!-- grand total -->
+                        <div class="flex justify-between px-16 py-4">
+                            <p>Grand Price</p>
+                            <p>BDT<span id="grand-price">0</span></p>
+                        </div>
+                    </div>
+                    <!-- Ticket input -->
+                    <div class="space-y-8">
+                        <div>
+                            <p class="font-semibold mb-2">Passenger Name*</p>
+                            <input type="text" placeholder="Enter Your Name"
+                                class="border border-gray-200 input w-full mx-auto" />
+                        </div>
+                        <div>
+                            <p class="font-semibold mb-2">Phone Number*</p>
+                            <input type="text" placeholder="Enter Your Number"
+                                class="border border-gray-200 input w-full mx-auto" />
+                        </div>
+                        <div>
+                            <p class="font-semibold mb-2">Email ID</p>
+                            <input type="text" placeholder="Enter Your Email"
+                                class="border border-gray-200 input w-full mx-auto" />
+                        </div>
+                        <div>
+                            <button class="w-full bg-[#1DD100] py-3 rounded-2xl font-bold text-white text-xl"
+                                onclick="thankYou()">Next</button>
+                        </div>
+                    </div>
+                    <div class="flex justify-around">
+                        <p class="text-gray-500 underline">Terms and conditions</p>
+                        <p class="text-gray-500 underline">Cancellation Policy</p>
                     </div>
                 </div>
             </div>
-
         </section>
     </main>
     <footer>
 
     </footer>
+
+    <script src="scripts/utility.js"></script>
+    <script src="scripts/ticket.js"></script>
 </body>
 
 </html>
